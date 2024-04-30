@@ -1,0 +1,108 @@
+.selectContainer {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 50ms linear;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.select {
+  all: unset;
+  padding-right: 14px;
+}
+
+.selectIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  pointer-events: none;
+  width: 6px;
+
+  & > svg {
+    width: 8px;
+    height: 6px;
+
+    path {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1px;
+      vector-effect: non-scaling-stroke;
+      stroke-linecap: round;
+    }
+  }
+}
+
+.iconUp {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 50%;
+  transform: translate3d(-50%, 0, 0) rotate(180deg);
+}
+
+.iconDown {
+  position: absolute;
+  bottom: calc(50% - 8px);
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+// .selectContainer {
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 150px; // Adjust as necessary
+//   height: 50px; // Adjust as necessary
+//   background: #e4e4e4;
+//   border-radius: 25px;
+//   overflow: hidden;
+// }
+
+// .themeSwitch {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .switchButton {
+//   background: none;
+//   border: none;
+//   color: #666;
+//   height: 100%;
+//   transition: color 0.3s;
+//   cursor: pointer;
+  
+//   &:focus {
+//     outline: none;
+//   }
+// }
+
+// .switchButtonActive {
+//   color: #fff;
+// }
+
+// .switchSelector {
+//   position: absolute;
+//   width: calc(100% / 3);
+//   height: 100%;
+//   background: #0078d4;
+//   transition: transform 0.3s ease-in-out;
+//   border-radius: 25px;
+// }
+
+// .auto {
+//   transform: translateX(0);
+// }
+
+// .light {
+//   transform: translateX(100%);
+// }
+
+// .dark {
+//   transform: translateX(200%);
+// }
