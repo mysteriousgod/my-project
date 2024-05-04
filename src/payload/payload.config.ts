@@ -29,8 +29,6 @@ import { Settings } from './globals/Settings'
 import { priceUpdated } from './stripe/webhooks/priceUpdated'
 import { productUpdated } from './stripe/webhooks/productUpdated'
 
-import Logo from './components/graphic/Logo';
-import Icon from './access/img.png';
 import MyCustomIcon from './customComponents/MyCustomIcon/page'
 const generateTitle: GenerateTitle = () => {
   return 'My Store'
